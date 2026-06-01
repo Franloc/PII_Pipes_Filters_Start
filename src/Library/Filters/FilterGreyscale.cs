@@ -12,6 +12,11 @@ namespace CompAndDel.Filters
         /// </summary>
         /// <param name="image">La imagen a la cual se le va a aplicar el filtro.</param>
         /// <returns>La imagen recibida pero en escala de grises.</returns>
+        private bool result;
+        public bool Result
+        {
+            get {return this.result;} set {this.result = value;}
+        }
         public IPicture Filter(IPicture image)
         {
             IPicture result = image.Clone();

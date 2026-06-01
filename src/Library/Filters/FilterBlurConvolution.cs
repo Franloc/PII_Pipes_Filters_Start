@@ -13,6 +13,11 @@ namespace CompAndDel.Filters
     {
         protected int[,] kernel;
         protected int complement, divider;
+        private bool result;
+        public bool Result
+        {
+            get {return this.result;} set {this.result = value;}
+        }
 
         /// <summary>
         /// Inicializa una nueva instancia de <c>FilterBlurConvolution</c> asignando el kernel, complemento, y divisor
